@@ -44,7 +44,9 @@ export class TreeviewItem {
             this.disabled = item.disabled;
         }
         if (!isNil(item.children) && item.children.length > 0) {
-            this.children = item.children;
+            this.children = item.children.map(child => {
+                return new TreeviewItem(child);
+            });
         }
         if (autoCorrectChecked) {
             this.correctChecked();
@@ -83,9 +85,6 @@ export class TreeviewItem {
     set disabled(value: boolean) {
         if (this.internalDisabled !== value) {
             this.internalDisabled = value;
-            if (!isNil(this.internalChildren)) {
-                this.internalChildren.forEach(child => child.disabled = value);
-            }
         }
     }
 
