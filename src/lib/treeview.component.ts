@@ -66,7 +66,7 @@ export class TreeviewComponent implements OnChanges {
         private eventParser: TreeviewEventParser
     ) {
         this.config = this.defaultConfig;
-        this.allItem = new TreeviewItem({ text: 'All', value: undefined });
+        this.allItem = new TreeviewItem({ text: 'Todos', value: undefined });
         this.createHeaderTemplateContext();
     }
 

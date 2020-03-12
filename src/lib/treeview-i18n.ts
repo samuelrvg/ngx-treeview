@@ -28,18 +28,18 @@ export class TreeviewI18nDefault extends TreeviewI18n {
     }
 
     getAllCheckboxText(): string {
-        return 'All';
+        return 'Todos';
     }
 
     getFilterPlaceholder(): string {
-        return 'Filter';
+        return 'Filtrar';
     }
 
     getFilterNoItemsFoundText(): string {
-        return 'No items found';
+        return 'Nenhum item encontrado';
     }
 
     getTooltipCollapseExpandText(isCollapse: boolean): string {
-        return isCollapse ? 'Expand' : 'Collapse';
+        return isCollapse ? 'Expandir' : 'Recolher';
     }
 }

@@ -22,7 +22,6 @@ export class TreeviewItem {
     private internalChildren: TreeviewItem[];
     text: string;
     value: any;
-    default: any;
 
     constructor(item: TreeItem, autoCorrectChecked = false) {
         if (isNil(item)) {
@@ -45,6 +44,9 @@ export class TreeviewItem {
         }
         if (!isNil(item.children) && item.children.length > 0) {
             this.children = item.children.map(child => {
+                // if (this.disabled === true) {
+                //     child.disabled = true;
+                // }
                 return new TreeviewItem(child);
             });
         }
