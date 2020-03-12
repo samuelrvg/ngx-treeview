@@ -1,6 +1,6 @@
 {
-  "name": "ngx-treeview-sigec-sx",
-  "version": "6.0.6",
+  "name": "ngx-treeview-br",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "An Angular treeview component with checkbox",
   "scripts": {
