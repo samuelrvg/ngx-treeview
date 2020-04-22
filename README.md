@@ -3,9 +3,17 @@
 [![npm version](https://img.shields.io/npm/v/ngx-treeview.svg)](https://www.npmjs.com/package/ngx-treeview)
 [![npm](https://img.shields.io/npm/l/ngx-treeview.svg)]()
 
-# ngx-treeview
+# ngx-treeview-br
 
 An Angular treeview component with checkbox
+
+Principal project: https://github.com/leovo2708/ngx-treeview
+
+Principal updates:
+
+* Update language to pt-BR.
+* Remove scroll vertical and horizontal.
+* Disable all children at tree disable.
 
 ## Dependencies
 
